@@ -29,7 +29,6 @@ body {
 
 .cardContainer__span {
     width: 341px;
-    
     left: 549px;
     font-family: 'Roboto';
     font-style: normal;
@@ -38,7 +37,6 @@ body {
     line-height: 19px;
     display: flex;
     align-items: center;
-    
     color: #D3D3D3;
     margin-bottom: 5px;
 }
@@ -58,9 +56,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 19px;
-   
     align-items: center;
-
     color: #302F2F;
 }
 

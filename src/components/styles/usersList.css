@@ -1,5 +1,5 @@
 .containerList {
-    display: grid;
+    display: flex;
     gap: 10px;
     grid-auto-rows: auto;
     justify-items: center;
@@ -11,7 +11,6 @@
     .containerList {
         display: flex;
         flex-direction: column;
-        
     }
 } 
 
