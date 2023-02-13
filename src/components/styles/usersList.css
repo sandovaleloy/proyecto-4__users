@@ -1,0 +1,27 @@
+.containerList {
+    display: grid;
+    gap: 10px;
+    grid-auto-rows: auto;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .containerList {
+        display: flex;
+        flex-direction: column;
+        
+    }
+} 
+
+@media (min-width: 769px)  and (max-width: 1200px) {
+    .containerList {
+        gap: 10px;
+        grid-auto-rows: auto;
+        justify-items: center;
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
