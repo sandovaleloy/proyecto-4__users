@@ -49,20 +49,20 @@ const ModalForm = ({isShowModal,
         <h3 className="modalForm__title">{updatingUser ? "edit user" : "new user"}</h3>
         <i onClick={handleClickClose} className='modalForm__x bx bx-x'></i>
         <div className="modalForm__div1">
-          <i class='bx bx-user'></i>
+          <i className='bx bx-user'></i>
           <input className="modalForm__input-one" type="text" {...register("first_name")} placeholder='example:  julia'/> 
           <input className="modalForm__input-one" type="text" {...register("last_name")}  placeholder='example:  conor'/>
         </div>
         <div className="modalForm__div">
-          <i class='bx bx-envelope'></i>
+          <i className='bx bx-envelope'></i>
           <input className="modalForm__input" type="email" {...register("email")} placeholder='example:  juConor@gmaill.com'/>
         </div>
         <div className="modalForm__div">
-          <i class='bx bx-shield'></i>
+          <i className='bx bx-shield'></i>
           <input className="modalForm__input" type="password" {...register("password")}  placeholder='********'/>
         </div>
         <div className="modalForm__div">
-        <i class='bx bx-calendar'></i>
+        <i className='bx bx-calendar'></i>
           <input className="modalForm__input" type="date" {...register("birthday")}  />
         </div>
         <button className="modalForm__btn">{updatingUser ? "save change" : "add new user"}</button>
