@@ -17,8 +17,6 @@ const ModalForm = ({isShowModal,
   updateUser,
   setUpdatingUser}) => {
 
- 
-
   const {register, handleSubmit, reset} = useForm()
 
   const submit = (data) => {
