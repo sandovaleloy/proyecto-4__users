@@ -44,7 +44,7 @@
         line-height: 61px;
         display: flex;
         align-items: center;
-        color: #0F0F2D;
+        color: var(--purple);
     }
 } 
 
@@ -52,13 +52,45 @@
     background-color: var(--purple);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 2px 2px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 200ms ease;
     margin: 0 auto;
+    background: linear-gradient(
+        45deg, 
+        red, blue, deeppink, blue,
+        red, blue, deeppink, blue
+    );
+    background-size: 800%;
+    animation: glowing 20s linear infinite;
 }
 
-.navbar__btn:hover {
-    background-color: var(--medium-purple);
+@keyframes glowing {
+    0% {
+        background-position: 0, 0;
+    }
+    50% {
+        background-position: 400%, 0;
+    }
+    100% {
+        background-position: 0, 0;
+    }
+}
+
+.iconBtn_container {
+    border: 10px solid var(--purple);
+    background-color: var(--purple);
+    display: inline-block;
+    border-radius: 5px;
+    z-index: 2;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    align-items: center;
+}
+
+.iconBtn_container p{
+    margin: 0;
+    font-size: 18px;
 }

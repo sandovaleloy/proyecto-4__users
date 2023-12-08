@@ -8,13 +8,17 @@ const UsersList = ({users,
 
   return (
     <section className='containerList'>
-        {
+        {users.length > 0 ? (
           users.map(user => <UserCard 
             key={user.id}
             handleClickShowModal={handleClickShowModal}
             setUpdatingUser={setUpdatingUser}
             deleteUser={deleteUser} 
             user={user}/>) 
+        ) : (
+            <p className="moving-text">No hay users creados</p>
+        )
+          
         }
     </section>
   )

@@ -7,10 +7,35 @@
     right: 0;
     place-content: center;
     display: none;
+    z-index: 3;
 }
 
 .activeForm {
     display: grid;
+}
+
+.containerForm {
+    border-radius: 10px;
+    border: 3px  double;
+    background: linear-gradient(
+        45deg, 
+        red, blue, deeppink, blue,
+        red, blue, deeppink, blue
+    );
+    background-size: 800%;
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0, 0;
+    }
+    50% {
+        background-position: 400%, 0;
+    }
+    100% {
+        background-position: 0, 0;
+    }
 }
 
 .modalForm__form {
@@ -21,7 +46,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-radius: 4px;
+    border-radius: 10px;
     font-family: 'Helvetica Neue';
 }
 
@@ -83,15 +108,32 @@
     background-color: var(--purple);
     border: none;
     color: white;
-    padding: 10px;
+    padding: 2px;
     font-size: 18px;
     border-radius: 8px;
     cursor: pointer;
     transition: background 200ms ease;
+    border-radius: 10px;
+    border: 3px  double;
+    background: linear-gradient(
+        45deg, 
+        red, blue, deeppink, blue,
+        red, blue, deeppink, blue
+    );
+    background-size: 800%;
+    animation: glowing 20s linear infinite;
 }
 
 .modalForm__btn:hover {
     background-color: var(--medium-purple);
+}
+
+.modalForm__btn p{
+    margin: 0;
+    font-size: 18px;
+    background-color: var(--purple);
+    border-radius: 8px;
+    border: 10px solid var(--purple);
 }
 
 @media (max-width: 322px) {
