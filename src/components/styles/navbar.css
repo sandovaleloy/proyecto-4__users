@@ -85,12 +85,15 @@
     z-index: 2;
     padding: 2px;
     display: flex;
-    justify-content: center;
-    gap: 2px;
+    gap: 10px;
     align-items: center;
 }
 
 .iconBtn_container p{
     margin: 0;
     font-size: 18px;
+}
+
+.iconBtn_container i{
+    font-size: 25px;
 }

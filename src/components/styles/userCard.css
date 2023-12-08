@@ -9,7 +9,8 @@ body {
   height: 300px;
   left: 529px;
   top: 219px;
-  background: #ffffff;
+  background: #c0bcbc;
+  /* background: var(--purple); */
   border: 1px solid #e5e5e5;
   display: grid;
   place-content: center;
@@ -30,7 +31,7 @@ body {
   margin: 0 auto;
   display: flex;
   padding-bottom: 10px;
-  color: #0f0f2d;
+  color: var(--purple);
 }
 
 .cardContainer__span {
@@ -43,7 +44,7 @@ body {
   line-height: 19px;
   display: flex;
   align-items: center;
-  color: #d3d3d3;
+  color: var(--purple);
   margin-bottom: 5px;
 }
 
@@ -102,6 +103,11 @@ body {
   transition: background 200ms ease;
 }
 
+.cardContainer__icon2:hover {
+  color: #a5a4a4;
+  transition: background 200ms ease;
+}
+
 .cardContainer__btn-delete {
   width: 43px;
   height: 43px;
@@ -113,5 +119,10 @@ body {
   color: white;
   padding-top: 5px;
   cursor: pointer;
+  transition: background 200ms ease;
+}
+
+.cardContainer__icon1:hover {
+  color: #a5a4a4;
   transition: background 200ms ease;
 }

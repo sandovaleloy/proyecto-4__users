@@ -16,7 +16,7 @@ const UsersList = ({users,
             deleteUser={deleteUser} 
             user={user}/>) 
         ) : (
-            <p className="moving-text">No hay users creados</p>
+            <p className="moving-text">THERE ARE NO USERS CREATED</p>
         )
           
         }

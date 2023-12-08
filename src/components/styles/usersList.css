@@ -1,13 +1,14 @@
 .containerList {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   grid-auto-rows: auto;
-  justify-items: flex-start;
-  grid-template-columns: repeat(3, 1fr);
+  /* justify-items: flex-start; */
   margin: 0 auto;
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .containerList {
     display: flex;
     flex-direction: column;
@@ -23,7 +24,7 @@
     flex-direction: column;
     grid-template-columns: repeat(3, 1fr);
   }
-}
+} */
 
 .containerList p {
   position: absolute;

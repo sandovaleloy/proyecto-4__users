@@ -1,4 +1,165 @@
 .modalForm {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.567);
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  place-content: center;
+  display: none;
+  z-index: 3;
+}
+
+.activeForm {
+  display: grid;
+}
+
+.containerForm {
+  border-radius: 10px;
+  border: 3px double;
+  background: linear-gradient(
+    45deg,
+    red,
+    blue,
+    deeppink,
+    blue,
+    red,
+    blue,
+    deeppink,
+    blue
+  );
+  background-size: 800%;
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0, 0;
+  }
+  50% {
+    background-position: 400%, 0;
+  }
+  100% {
+    background-position: 0, 0;
+  }
+}
+
+.modalForm__form {
+  background-color: #c0bcbc;
+  padding: 20px;
+  position: relative;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  font-family: "Helvetica Neue";
+}
+
+.modalForm__title {
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: center;
+  color: var(--purple);
+}
+
+.modalForm__x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalForm__x:hover {
+  color: rgb(178, 0, 0);
+}
+
+.modalForm__div {
+  line-height: 30px;
+}
+
+.modalForm__div1 {
+  line-height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalForm__label {
+  display: block;
+}
+
+.modalForm__divx {
+  line-height: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.modalForm__input-one {
+  margin: 0 8px;
+  padding: 9px;
+  outline: none;
+  border: none;
+  font-family: var(--principal-font);
+}
+
+.modalForm__input {
+  width: 100%;
+  padding: 9px;
+  outline: none;
+  border: none;
+  font-family: var(--principal-font);
+}
+
+.modalForm__btn {
+  background-color: var(--purple);
+  border: none;
+  color: white;
+  padding: 2px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 200ms ease;
+  border-radius: 10px;
+  border: 3px double;
+  background: linear-gradient(
+    45deg,
+    red,
+    blue,
+    deeppink,
+    blue,
+    red,
+    blue,
+    deeppink,
+    blue
+  );
+  background-size: 800%;
+  animation: glowing 20s linear infinite;
+}
+
+.modalForm__btn:hover {
+  background-color: var(--medium-purple);
+}
+
+.modalForm__btn p {
+  margin: 0;
+  font-size: 18px;
+  background-color: var(--purple);
+  border-radius: 8px;
+  border: 10px solid var(--purple);
+}
+
+@media (max-width: 322px) {
+  .modalForm__div1 {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    width: 100%;
+  }
+
+  .modalForm {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.567);
     top: 0;
@@ -7,213 +168,65 @@
     right: 0;
     place-content: center;
     display: none;
-    z-index: 3;
-}
+  }
 
-.activeForm {
-    display: grid;
-}
-
-.containerForm {
-    border-radius: 10px;
-    border: 3px  double;
-    background: linear-gradient(
-        45deg, 
-        red, blue, deeppink, blue,
-        red, blue, deeppink, blue
-    );
-    background-size: 800%;
-    animation: glowing 20s linear infinite;
-}
-
-@keyframes glowing {
-    0% {
-        background-position: 0, 0;
-    }
-    50% {
-        background-position: 400%, 0;
-    }
-    100% {
-        background-position: 0, 0;
-    }
-}
-
-.modalForm__form {
-    background-color: white;
+  .modalForm__form {
+    background-color: #c0bcbc;
     padding: 20px;
     position: relative;
-    width: 450px;
+    /* width: 300px; */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-radius: 10px;
-    font-family: 'Helvetica Neue';
-}
-
-.modalForm__title {
-    font-size: 30px;
-    margin: 10px 0;
-    text-align: center;
-}
-
-.modalForm__x {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.modalForm__x:hover {
-    color: rgb(178, 0, 0);
-}
-
-.modalForm__div {
-    line-height: 30px;
-}
-
-.modalForm__div1 {
-    line-height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.modalForm__label {
-    display: block;
-}
-
-.modalForm__divx {
-    line-height: 30px;
-    display: flex;
-    flex-direction: row;
-}
-
-.modalForm__input-one {
-    margin: 0 8px;
-    padding: 9px;
-    outline: none;
-    font-family: var(--principal-font);
-}
-
-.modalForm__input {
-    width: 100%;
-    padding: 9px;
-    outline: none;
-    font-family: var(--principal-font);
-}
-
-.modalForm__btn {
-    background-color: var(--purple);
-    border: none;
-    color: white;
-    padding: 2px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 200ms ease;
-    border-radius: 10px;
-    border: 3px  double;
-    background: linear-gradient(
-        45deg, 
-        red, blue, deeppink, blue,
-        red, blue, deeppink, blue
-    );
-    background-size: 800%;
-    animation: glowing 20s linear infinite;
-}
-
-.modalForm__btn:hover {
-    background-color: var(--medium-purple);
-}
-
-.modalForm__btn p{
-    margin: 0;
-    font-size: 18px;
-    background-color: var(--purple);
-    border-radius: 8px;
-    border: 10px solid var(--purple);
-}
-
-@media (max-width: 322px) {
-    .modalForm__div1{
-        display: flex;
-        flex-direction: column;
-        margin: 5px auto;
-        width: 100%;
-    }
-
-    .modalForm {
-        position: fixed;
-        background-color: rgba(0, 0, 0, 0.567);
-        top: 0;
-        height: 100vh;
-        left: 0;
-        right: 0;
-        place-content: center;
-        display: none;
-    }
-
-    .modalForm__form {
-        background-color: white;
-        padding: 20px;
-        position: relative;
-        width: 460px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        border-radius: 4px;
-    }
+    border-radius: 4px;
+  }
 }
 
 @media (max-width: 768px) {
+  .modalForm {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.567);
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    place-content: center;
+    display: none;
+  }
 
-    .modalForm {
-        position: fixed;
-        background-color: rgba(0, 0, 0, 0.567);
-        top: 0;
-        height: 100vh;
-        left: 0;
-        right: 0;
-        place-content: center;
-        display: none;
-    }
+  .activeForm {
+    display: grid;
+  }
 
-    .activeForm {
-        display: grid;
-    }
+  .modalForm__form {
+    background-color: #c0bcbc;
+    padding: 20px;
+    position: relative;
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 4px;
+  }
 
-    .modalForm__form {
-        background-color: white;
-        padding: 20px;
-        position: relative;
-        width: 460px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        border-radius: 4px;
-    }
+  .modalForm__divUni {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 
-    .modalForm__divUni {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
+  .modalForm__div1 {
+    line-height: 30px;
+    display: flex;
+  }
 
-    .modalForm__div1 {
-        line-height: 30px;
-        display: flex;
-    }
-
-    .modalForm__div2 {
-        line-height: 30px;
-        display: block;
-        position: relative;
-    }
-} 
-
+  .modalForm__div2 {
+    line-height: 30px;
+    display: block;
+    position: relative;
+  }
+}
 
 .modalForm__input::placeholder {
-    transition: color 300ms ease;
+  transition: color 300ms ease;
 }

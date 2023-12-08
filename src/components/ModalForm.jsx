@@ -46,7 +46,7 @@ const ModalForm = ({
       <div  className="containerForm">
         <form onSubmit={handleSubmit(submit)} className="modalForm__form">
           <h3 className="modalForm__title">
-            {updatingUser ? "edit user" : "new user"}
+            {updatingUser ? "Edit User" : "New User"}
           </h3>
           <i onClick={handleClickClose} className="modalForm__x bx bx-x"></i>
           <div className="modalForm__div1">
@@ -91,7 +91,7 @@ const ModalForm = ({
             />
           </div>
           <button className="modalForm__btn">
-            {updatingUser ? "save change" : <p>"add new user"</p>}
+            {updatingUser ? <p>Save change</p> : <p>Add new user</p>}
           </button>
         </form>
       </div>

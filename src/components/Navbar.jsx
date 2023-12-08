@@ -7,8 +7,9 @@ const Navbar = ({ handleClickShowModal }) => {
       <h1 className="navbar__title">Users</h1>
       <button className="navbar__btn" onClick={handleClickShowModal}>
         <div className="iconBtn_container">
-          <i className="bx bx-cross"></i>
-          <p>create new user</p>
+          <p>New user</p>
+          <i className="bx bxs-user-plus"></i>
+          {/* <i className="bx bx-cross"></i> */}
         </div>
       </button>
     </nav>
