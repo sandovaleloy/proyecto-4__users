@@ -123,7 +123,7 @@
   cursor: pointer;
   transition: background 200ms ease;
   border-radius: 10px;
-  border: 3px double;
+  border: 2px double;
   background: linear-gradient(
     45deg,
     red,
@@ -151,10 +151,10 @@
   border: 10px solid var(--purple);
 }
 
-@media (max-width: 322px) {
+@media (max-width: 270px) {
   .modalForm__div1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 5px auto;
     width: 100%;
   }
@@ -170,15 +170,8 @@
     display: none;
   }
 
-  .modalForm__form {
-    background-color: #c0bcbc;
-    padding: 20px;
-    position: relative;
-    /* width: 300px; */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 4px;
+  .modalForm__input-one {
+    width: 40%;
   }
 }
 
@@ -187,7 +180,7 @@
     position: fixed;
     background-color: rgba(0, 0, 0, 0.567);
     top: 0;
-    height: 100vh;
+    height: 100%;
     left: 0;
     right: 0;
     place-content: center;
@@ -202,7 +195,7 @@
     background-color: #c0bcbc;
     padding: 20px;
     position: relative;
-    width: 410px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -224,6 +217,10 @@
     line-height: 30px;
     display: block;
     position: relative;
+  }
+
+  .modalForm__input-one {
+    width: 40%;
   }
 }
 

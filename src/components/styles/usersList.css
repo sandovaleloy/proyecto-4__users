@@ -3,28 +3,8 @@
   flex-wrap: wrap;
   gap: 10px;
   grid-auto-rows: auto;
-  /* justify-items: flex-start; */
   margin: 0 auto;
-  /* grid-template-columns: repeat(3, 1fr); */
 }
-
-/* @media (max-width: 768px) {
-  .containerList {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 769px) {
-  .containerList {
-    gap: 10px;
-    grid-auto-rows: auto;
-    justify-items: center;
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: repeat(3, 1fr);
-  }
-} */
 
 .containerList p {
   position: absolute;
@@ -37,7 +17,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateY(100px); /* Cambia la distancia del desplazamiento */
+    transform: translateY(100px); 
   }
   100% {
     transform: translateX(0);
@@ -45,7 +25,7 @@
 }
 
 .moving-text {
-  color: #555A88; /* Añade estilos adicionales como el color */
+  color: #555A88; 
   font-size: 16px;
-  animation: moveText 4s linear infinite; /* Cambia la duración de la animación */
+  animation: moveText 4s linear infinite; 
 }
