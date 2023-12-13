@@ -80,6 +80,7 @@ const ModalForm = ({
               type="password"
               {...register("password")}
               placeholder="********"
+              autoComplete="current-password"
             />
           </div>
           <div className="modalForm__div">
