@@ -56,12 +56,14 @@ const ModalForm = ({
               type="text"
               {...register("first_name")}
               placeholder="example:  julia"
+              autoComplete="name"
             />
             <input
               className="modalForm__input-one"
               type="text"
               {...register("last_name")}
               placeholder="example:  conor"
+              autoComplete="family-name"
             />
           </div>
           <div className="modalForm__div">
@@ -71,6 +73,7 @@ const ModalForm = ({
               type="email"
               {...register("email")}
               placeholder="example:  juConor@gmaill.com"
+              autoComplete="email"
             />
           </div>
           <div className="modalForm__div">
@@ -89,6 +92,7 @@ const ModalForm = ({
               className="modalForm__input"
               type="date"
               {...register("birthday")}
+              autoComplete="bday"
             />
           </div>
           <button className="modalForm__btn">
