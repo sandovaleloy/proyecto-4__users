@@ -19,11 +19,11 @@ const UserCard = ({user,
       <hr className="cardContainer__hr"/>
       <u className="cardContainer__type">
         <li className="cardContainer__list">
-          <span className="cardContainer__span">email</span>
+          <span className="cardContainer__span">Email</span>
           <span className="cardContainer__span2">{user.email}</span>
         </li>
         <li className="cardContainer__list">
-          <span className="cardContainer__span">birthday</span>
+          <span className="cardContainer__span">Birthday</span>
           <i className="cardContainer__detalle bx bx-gift"></i>
           <span className="cardContainer__span2"> {user.birthday}</span>
         </li>

@@ -55,14 +55,14 @@ const ModalForm = ({
               className="modalForm__input-one"
               type="text"
               {...register("first_name")}
-              placeholder="example:  julia"
+              placeholder="Example:  julia"
               autoComplete="name"
             />
             <input
               className="modalForm__input-one"
               type="text"
               {...register("last_name")}
-              placeholder="example:  conor"
+              placeholder="Example:  conor"
               autoComplete="family-name"
             />
           </div>
@@ -72,7 +72,7 @@ const ModalForm = ({
               className="modalForm__input"
               type="email"
               {...register("email")}
-              placeholder="example:  juConor@gmaill.com"
+              placeholder="Example:  juConor@gmaill.com"
               autoComplete="email"
             />
           </div>

@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <div className="imgFondo">
-        <img src="./image/fondo2.jpg" alt="" />
+        <img src="./image/fondo3.avif" alt="" />
       </div>
       <Navbar handleClickShowModal={handleClickShowModal} />
 
