@@ -1,25 +1,61 @@
-.App {
-  font-family: var(--principal-font);
-  /* font-family: 'Helvetica Neue'; */
-}
-
-.imgFondo {
-  position: fixed;
-  width: 100%;
-  height: 100%;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Fondo degradado */
+  color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  z-index: -1;
+  min-height: 100vh;
 }
 
-.imgFondo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+/* Contenedor principal */
+.App {
+  width: auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 27px;
+}
+
+/* Si tienes un navbar, lo alineamos bien */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #636891;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Ajuste para la lista de usuarios */
+.containerList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  padding: 20px 0;
+}
+
+/* Mejoramos los botones generales */
+button {
+  background: #555a88;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #454b78;
 }

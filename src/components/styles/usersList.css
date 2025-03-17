@@ -1,31 +1,62 @@
-.containerList {
+.users-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
-  grid-auto-rows: auto;
-  margin: 0 auto;
 }
 
-.containerList p {
-  position: absolute;
-  top: 40%;
-  left: 40%;
+.user-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
 }
 
-@keyframes moveText {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateY(100px); 
-  }
-  100% {
-    transform: translateX(0);
-  }
+.user-card:hover {
+  transform: translateY(-5px);
 }
 
-.moving-text {
-  color: #555A88; 
-  font-size: 16px;
-  animation: moveText 4s linear infinite; 
+.user-card h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.user-card p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.user-card .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.user-card button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.user-card .edit-btn {
+  background: #28a745;
+  color: white;
+}
+
+.user-card .edit-btn:hover {
+  background: #218838;
+}
+
+.user-card .delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.user-card .delete-btn:hover {
+  background: #c82333;
 }

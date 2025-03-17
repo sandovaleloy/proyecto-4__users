@@ -43,7 +43,7 @@ const ModalForm = ({
 
   return (
     <section className={`modalForm ${isShowModal ? "activeForm" : ""}`}>
-      <div  className="containerForm">
+      <div className="containerForm">
         <form onSubmit={handleSubmit(submit)} className="modalForm__form">
           <h3 className="modalForm__title">
             {updatingUser ? "Edit User" : "New User"}
