@@ -7,40 +7,41 @@ body {
   margin: 20px 0;
   width: 300px;
   height: 300px;
-  /* left: 529px;
-  top: 219px; */
-  background: #c0bcbc;
-  /* background: var(--purple); */
+  background: linear-gradient(145deg, #d1d1d1, #f0f0f0);
   border: 1px solid #e5e5e5;
   display: flex;
   flex-direction: column;
-  /* place-content: center; */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
   padding: 10px;
   justify-content: center;
 }
 
 .cardContainer:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el ratón */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
 }
 
 .cardContainer__title {
-  font-family: "Helvetica Neue";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   padding-bottom: 10px;
   color: var(--purple);
+  max-width: 99%;
+  overflow: hidden;
+  height: 80px;
 }
 
 .cardContainer__span {
   width: 100%;
   left: 549px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -61,7 +62,7 @@ body {
 }
 
 .cardContainer__span2 {
-  font-family: "Helvetica Neue";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -71,11 +72,11 @@ body {
 }
 
 .cardContainer__hr {
-  width: 90%;
+  width: 99%;
   height: 0px;
   left: 580px;
   top: 287.5px;
-  border: 0.5px solid #e5e5e5;
+  border: 0.5px solid #b0acac;
 }
 
 .cardContainer__detalle {
@@ -97,8 +98,8 @@ body {
   height: 43px;
   left: 848px;
   top: 725px;
-  background: #f7f7f7;
-  color: #d3d3d3;
+  background: #4a90e2;
+  color: white;
   border: 1px solid #bdbdbd;
   border-radius: 4px;
   font-size: 30px;
@@ -109,9 +110,9 @@ body {
   justify-content: center;
 }
 
-.cardContainer__icon2:hover {
-  color: #a5a4a4;
-  transition: background 200ms ease;
+.cardContainer__btn-edit:hover {
+  background: #357abd;
+  transform: scale(1.05);
 }
 
 .cardContainer__btn-delete {
@@ -120,7 +121,6 @@ body {
   top: 70px;
   font-size: 30px;
   background: #d85d5d;
-  border: 1px solid #d93f3f;
   border-radius: 4px;
   color: white;
   padding-top: 5px;
@@ -130,7 +130,7 @@ body {
   justify-content: center;
 }
 
-.cardContainer__icon1:hover {
-  color: #a5a4a4;
-  transition: background 200ms ease;
+.cardContainer__btn-delete:hover {
+  background: #b73a3a;
+  transform: scale(1.05);
 }
